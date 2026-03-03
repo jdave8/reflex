@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 068e233b128f64bebba2b611e7e18af4, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: 
+  circleWorldRadius: 0.6
+  ringStartRadiusMultiplier: 3
+  baseRingCloseTime: 2
+  perfectZone: 0.08
+  greatZone: 0.18
+  goodZone: 0.3
+  justZone: 0.45
+  baseHitPoints: 100
+  qualityMultipliers:
+  - 3
+  - 2
+  - 1.5
+  - 1
+  - 0
+  streakMultiplierPerHit: 0.01
+  maxStreakMultiplier: 5
+  timeSurvivalMultiplierRate: 0.001
+  minRingCloseTime: 0.4
+  difficultyRampRate: 0.02
+  baseSpawnInterval: 2.5
+  minSpawnInterval: 0.6
+  spawnIntervalRampRate: 0.015
+  multiCircleThreshold: 200
+  tripleCircleThreshold: 400
+  stadiumThresholds: 0000000032000000960000002c010000f4010000
+  stadiumNames:
+  - Rookie
+  - Club
+  - Arena
+  - Stadium
+  - Legend
+  spawnMargin: 0.1
+  minCircleSpacing: 1.5
+  backgroundColor: {r: 0.06, g: 0.06, b: 0.08, a: 1}
+  deathFizzleDuration: 1.2
+  scoreCardDelay: 0.3
+  circleBaseColor: {r: 0.15, g: 0.15, b: 0.2, a: 0.8}
+  ringColor: {r: 0, g: 0.9, b: 1, a: 1}
+  ringGlowIntensity: 0.5
