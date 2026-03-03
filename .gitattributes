@@ -1,0 +1,53 @@
+# Unity YAML
+*.meta -text merge=unityyamlmerge diff
+*.unity -text merge=unityyamlmerge diff
+*.asset -text merge=unityyamlmerge diff
+*.prefab -text merge=unityyamlmerge diff
+
+# Image
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.psd binary
+*.tif binary
+*.tiff binary
+*.bmp binary
+*.exr binary
+*.hdr binary
+
+# Audio
+*.mp3 binary
+*.ogg binary
+*.wav binary
+*.aif binary
+*.aiff binary
+
+# Video
+*.mp4 binary
+*.mov binary
+*.avi binary
+*.webm binary
+
+# 3D
+*.fbx binary
+*.obj binary
+*.blend binary
+
+# Font
+*.ttf binary
+*.otf binary
+
+# Compressed
+*.zip binary
+*.7z binary
+*.gz binary
+*.tar binary
+
+# Compiled
+*.dll binary
+*.so binary
+*.dylib binary
+
+# Documents
+*.pdf binary
