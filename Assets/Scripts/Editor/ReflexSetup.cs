@@ -346,6 +346,11 @@ namespace Reflex.Editor
             // ==================================================================
             GameObject hudPanel = FindOrCreateChild(canvasObj, "HUDPanel");
             StretchFull(hudPanel);
+            // Let taps pass through the HUD to reach circles during gameplay
+            var hudCG = hudPanel.GetComponent<CanvasGroup>();
+            if (hudCG == null) hudCG = hudPanel.AddComponent<CanvasGroup>();
+            hudCG.blocksRaycasts = false;
+            hudCG.interactable = false;
             hudPanel.SetActive(false);
 
             var scoreText = EnsureText(hudPanel, "ScoreText");

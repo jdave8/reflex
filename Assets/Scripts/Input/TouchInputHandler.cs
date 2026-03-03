@@ -37,35 +37,29 @@ namespace Reflex.Input
         {
             var state = GameManager.Instance.CurrentState;
 
-            // Handle tap-to-start
+            // Handle tap-to-start (any tap works — no UI filter)
             if (state == GameState.ReadyToPlay)
             {
                 foreach (var touch in Touch.activeTouches)
                 {
                     if (touch.phase == TouchPhase.Began)
                     {
-                        if (!IsPointerOverUI(touch))
-                        {
-                            GameManager.Instance.StartGame();
-                            return;
-                        }
+                        GameManager.Instance.StartGame();
+                        return;
                     }
                 }
                 return;
             }
 
-            // Handle tap-to-restart from score card
+            // Handle tap-to-restart from score card (any tap works)
             if (state == GameState.ScoreCard)
             {
                 foreach (var touch in Touch.activeTouches)
                 {
                     if (touch.phase == TouchPhase.Began)
                     {
-                        if (!IsPointerOverUI(touch))
-                        {
-                            GameManager.Instance.ReturnToReady();
-                            return;
-                        }
+                        GameManager.Instance.ReturnToReady();
+                        return;
                     }
                 }
                 return;
